@@ -117,7 +117,7 @@ main .contenido-izquierda .skills ul li h3{
     font-weight: 400;
 }
 main .contenido-izquierda .skills ul li .contenedor-progress-bar{
-    width: 250px;
+    width: 200px;
     height: 16px;
     border: 0.2px solid black;
     border-radius: 12px;
@@ -127,37 +127,49 @@ main .contenido-izquierda .skills ul li:nth-child(1) .contenedor-progress-bar .p
     width: 75%;
     height: 100%;
     background-color: rgb(147, 209, 65);
-    animation: progreso75 5s ease-in 30s 3;
+    animation: progreso75 5s ease-in 30s 5;
 }
 main .contenido-izquierda .skills ul li:nth-child(2) .contenedor-progress-bar .progress-bar{
     width: 75%;
     height: 100%;
     background-color: rgb(147, 209, 65);
-    animation: progreso75 5s ease-in 30s 3;
+    animation: progreso75 5s ease-in 30s 5;
 }
 main .contenido-izquierda .skills ul li:nth-child(3) .contenedor-progress-bar .progress-bar{
     width: 50%;
     height: 100%;
     background-color: rgb(212, 128, 59);
-    animation: progreso50 5s ease-in 30s 3;
+    animation: progreso50 5s ease-in 30s 5;
 }
 main .contenido-izquierda .skills ul li:nth-child(4) .contenedor-progress-bar .progress-bar{
-    width: 75%;
+    width: 50%;
     height: 100%;
-    background-color: rgb(147, 209, 65);
-    animation: progreso75 5s ease-in 30s 3;
+    background-color: rgb(212, 128, 59);
+    animation: progreso50 5s ease-in 30s 5;
 }
 main .contenido-izquierda .skills ul li:nth-child(5) .contenedor-progress-bar .progress-bar{
     width: 50%;
     height: 100%;
     background-color: rgb(212, 128, 59);
-    animation: progreso50 5s ease-in 30s 3;
+    animation: progreso50 5s ease-in 30s 5;
 }
 main .contenido-izquierda .skills ul li:nth-child(6) .contenedor-progress-bar .progress-bar{
     width: 75%;
     height: 100%;
     background-color: rgb(147, 209, 65);
-    animation: progreso75 5s ease-in 30s 3;
+    animation: progreso75 5s ease-in 30s 5;
+}
+main .contenido-izquierda .skills ul li:nth-child(7) .contenedor-progress-bar .progress-bar{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(212, 128, 59);
+    animation: progreso50 5s ease-in 30s 5;
+}
+main .contenido-izquierda .skills ul li:nth-child(8) .contenedor-progress-bar .progress-bar{
+    width: 75%;
+    height: 100%;
+    background-color: rgb(147, 209, 65);
+    animation: progreso75 5s ease-in 30s 5;
 }
 @keyframes progreso75{
     0%{
@@ -245,7 +257,7 @@ main .contenido-derecha .proyectos ul li a {
     font-size: var(--sm);
 }
 main .contenido-derecha .educacion ul{
-    padding-left: var(--padding-left-content);
+    padding-left: var(--padding-list-content);
     padding-right: var(--padding-left-content);
 }
 main .contenido-derecha .educacion ul li div{
@@ -274,4 +286,17 @@ main .contenido-derecha .links ul li a{
     text-decoration: none;
     font-size: var(--md);
     color: black;
+}
+
+/* Media Query */
+@media (max-width:900px){
+    main .contenido-izquierda .skills ul li h3{
+        width: 150px;
+    }
+}
+@media (max-width:700px){
+    .encabezado .encabezado-inferior{
+        flex-direction: column;
+        height: 120px;
+    }
 }
