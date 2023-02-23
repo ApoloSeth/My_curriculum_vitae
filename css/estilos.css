@@ -1,0 +1,52 @@
+/* -----Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --title-ppal: 26px;
+    --title-secun: 22px;
+    --lg: 20px;
+    --md: 18px;
+    --sm: 16px;
+    --bg-encabezado: #312d2d;
+    --color-encabezado: #ffffff;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* -----Header */
+.encabezado {
+    background-color: var(--bg-encabezado);
+    color: var(--color-encabezado);
+}
+.encabezado .encabezado-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0px;
+    border-bottom: 1.5px solid black;
+    
+}
+.encabezado .encabezado-superior img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.encabezado .encabezado-superior h1{
+    font-size: var(--title-ppal);
+    font-weight: bold;
+}
+.encabezado .encabezado-superior h2{
+    font-size: var(--title-secun);
+    font-weight: 300;
+}
+
+.encabezado .encabezado-inferior{
+    
+}
